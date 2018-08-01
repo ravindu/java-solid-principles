@@ -2,11 +2,20 @@ package com.ravi.javasolidprinciples.ocp.badpractice.infrastructure.service;
 
 import org.springframework.util.Assert;
 
-import com.ravi.javasolidprinciples.ocp.badpractice.domain.CarLoan;
+import com.ravi.javasolidprinciples.ocp.badpractice.domain.CarLoanRequest;
 
+/**
+ * This class is responsible for validate Car loan and 'isValidCarLoan' method returns loan approval status based on
+ * loan request. This is a bad practice because we don't need to maintain two different methods to do the loan
+ * verification. The issue is if the bank introduce new loan type to Customer, then we have to introduce another new
+ * 'validator' class to do the verification.
+ * 
+ * @author ravindu.s
+ *
+ */
 public class CarLoanValidator {
 
-    public boolean isValidCarLoan(CarLoan carLoan) {
+    public boolean isValidCarLoan(CarLoanRequest carLoan) {
         boolean iscarLoanApproved = true;
         try {
             // Validate the Car Loan

@@ -1,6 +1,6 @@
 package com.ravi.javasolidprinciples.ocp.goodpractice.domain;
 
-public class CarLoan extends Loan {
+public class CarLoanRequest extends LoanRequest {
     
     private String carBrand;
     

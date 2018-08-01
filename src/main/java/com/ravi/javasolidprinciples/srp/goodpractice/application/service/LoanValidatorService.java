@@ -11,8 +11,9 @@ import com.ravi.javasolidprinciples.srp.goodpractice.infrastructure.service.Lega
 
 /**
  * This class is responsible for verify the fundamental requirements that need to be fulfilled and send a boolean
- * response whether it's a verified loan request of not. So each fundamental requirements are moved to separate classes
- * according to the SRP and each methods perform a single task.
+ * response whether it's a verified loan request of not. So each fundamental requirements are moved to separate services
+ * according to the SRP and each methods perform a single task. So 'isFundamentalRequirementsFulfilled' method takes the
+ * result return from each services, then decide if the fundamental requirements are fulfilled.
  * 
  * 
  * @author ravindu.s

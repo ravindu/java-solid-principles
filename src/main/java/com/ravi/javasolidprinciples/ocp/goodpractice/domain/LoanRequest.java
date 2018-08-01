@@ -1,6 +1,6 @@
 package com.ravi.javasolidprinciples.ocp.goodpractice.domain;
 
-public class Loan {
+public class LoanRequest {
 
     private String loanId;
     

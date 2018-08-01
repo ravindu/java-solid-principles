@@ -3,7 +3,11 @@ package com.ravi.javasolidprinciples.srp.goodpractice.infrastructure.service;
 import org.springframework.util.Assert;
 
 import com.ravi.javasolidprinciples.srp.goodpractice.domian.LoanRequest;
-
+/**
+ * Verify the legal background
+ * @author ravindu.s
+ *
+ */
 public class BankLegalService implements LegalService {
 
     @Override

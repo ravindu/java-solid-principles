@@ -2,11 +2,20 @@ package com.ravi.javasolidprinciples.ocp.badpractice.infrastructure.service;
 
 import org.springframework.util.Assert;
 
-import com.ravi.javasolidprinciples.ocp.badpractice.domain.PersonalLoan;
+import com.ravi.javasolidprinciples.ocp.badpractice.domain.PersonalLoanRequest;
 
+/**
+ * This class is responsible for validate Personal loan and 'isValidPersonalLoan' method returns loan approval status
+ * based on loan request. This is a bad practice because we don't need to maintain two different methods to do the loan
+ * verification. The issue is if the bank introduce new loan type to Customer, then we have to introduce another new
+ * 'validator' class to do the verification.
+ * 
+ * @author ravindu.s
+ *
+ */
 public class PersonalLoanValidator {
 
-    public boolean isValidPersonalLoan(PersonalLoan personalLoan) {
+    public boolean isValidPersonalLoan(PersonalLoanRequest personalLoan) {
         boolean isPersonalLoanApproved = true;
         try {
             // Validate the Personal Loan

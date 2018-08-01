@@ -2,7 +2,7 @@ package com.ravi.javasolidprinciples.ocp.goodpractice.domain;
 
 import java.util.List;
 
-public class PersonalLoan extends Loan{
+public class PersonalLoanRequest extends LoanRequest{
 
     private String loanPurpose;
     

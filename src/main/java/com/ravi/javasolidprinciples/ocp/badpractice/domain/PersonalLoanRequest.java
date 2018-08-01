@@ -2,7 +2,7 @@ package com.ravi.javasolidprinciples.ocp.badpractice.domain;
 
 import java.util.List;
 
-public class CarLoan {
+public class PersonalLoanRequest {
 
     private String loanId;
 
@@ -12,9 +12,7 @@ public class CarLoan {
 
     private long loanAmount;
 
-    private String carBrand;
-
-    private String carModel;
+    private String loanPurpose;
 
     private List<String> guaranteesList;
 
@@ -75,31 +73,17 @@ public class CarLoan {
     }
 
     /**
-     * @return the carBrand
+     * @return the loanPurpose
      */
-    public String getCarBrand() {
-        return carBrand;
+    public String getLoanPurpose() {
+        return loanPurpose;
     }
 
     /**
-     * @param carBrand the carBrand to set
+     * @param loanPurpose the loanPurpose to set
      */
-    public void setCarBrand(String carBrand) {
-        this.carBrand = carBrand;
-    }
-
-    /**
-     * @return the carModel
-     */
-    public String getCarModel() {
-        return carModel;
-    }
-
-    /**
-     * @param carModel the carModel to set
-     */
-    public void setCarModel(String carModel) {
-        this.carModel = carModel;
+    public void setLoanPurpose(String loanPurpose) {
+        this.loanPurpose = loanPurpose;
     }
 
     /**
