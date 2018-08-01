@@ -1,6 +1,6 @@
 package com.ravi.javasolidprinciples.srp.goodpractice.domian;
 
-public class Loan {
+public class LoanRequest {
 
     private String loanId;
     
